@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-allor"
+description = "Allor is a plugin for ComfyUI with an emphasis on transparency and performance."
+version = "1.0.0"
+license = "LICENSE"
+dependencies = ["rembg", "onnx", "# Optional for auto updates", "gitpython", "# If you want you can install onnxruntime with GPU support", "# onnxruntime[gpu]", "# For Nvidia (only for GPU onnxruntime)", "# tensorrt", "# cuda-python"]
+
+[project.urls]
+Repository = "https://github.com/Nourepide/ComfyUI-Allor"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-Allor"
+Icon = ""
