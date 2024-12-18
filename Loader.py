@@ -249,6 +249,8 @@ class Loader:
 
             except ImportError:
                 self.__error("GitPython is not installed.")
+            except GitCommandError:
+                self.__error("git command exec failed.")
 
     def setup_rembg(self):
         os.environ["U2NET_HOME"] = folder_paths.models_dir + "/onnx"
